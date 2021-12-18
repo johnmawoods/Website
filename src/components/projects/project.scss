@@ -1,0 +1,52 @@
+
+.project-card {
+    overflow: hidden;
+    box-sizing: 0 2px 20px #808080;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+    &:hover {
+        transform:scale(1.05);
+    }
+
+    
+}
+
+.card-banner {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.card-title {
+    padding: 1rem;
+}
+
+.card-text {
+    padding: 0 1rem;
+}
+
+.p-btn {
+    padding: 0.7rem 1.3rem 0.7rem 1.3rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 1rem;
+    background-image: linear-gradient(to right, #6106F5 , #9CC7FA);
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+}

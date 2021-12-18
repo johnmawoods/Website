@@ -1,0 +1,82 @@
+.contact {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../../assets/footer.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.contact-title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 25rem;
+    padding-bottom: 5rem;
+    color: #fff;
+}
+
+.c-btn {
+    padding: 0.7rem 3rem 0.7rem 3rem;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 auto;
+    display: block;
+    background-color: #ff5349;
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+}
+
+.footer-container {
+    display:flex;
+    flex-direction: row;
+    //justify-content: center;
+    //align-items: center;
+    margin-top: 15rem;
+}
+
+.github {
+    height: 50px;
+    width: 50px;
+
+}
+
+.linkedin {
+    height: 50px;
+    width: 50px;
+}
+
+.handshake {
+    height: 50px;
+    width: 50px;
+}
+
+.image-cropper {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 200ms ease-in;
+    cursor: pointer;
+
+    &:hover {
+        transform:scale(1.05);
+    }
+
+}
+
