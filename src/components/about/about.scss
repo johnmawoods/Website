@@ -11,8 +11,6 @@
     margin-bottom: 5rem;
 }
 
-
-// need media query
 .about-description {
     font-size: 1.5rem;
     text-align: center;
@@ -23,7 +21,42 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
     gap: 2rem;
-    //justify-content: center;
     margin: 10rem;
-    //align-items: center;
 }
+
+@media screen and (max-width: 995px) {
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-description {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 5rem 5rem 5rem;
+    }
+
+    
+
+  }
+
+  @media screen and (max-width: 570px) {
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 8rem));
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+    .about-description {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0 2rem 5rem 2rem;
+    }
+
+    
+
+  }

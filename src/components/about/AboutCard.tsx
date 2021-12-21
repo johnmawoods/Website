@@ -7,7 +7,7 @@ interface Props {
 
 const AboutCard:React.FC<Props> = (props) => {
     return (
-        <div>
+        <div className="container">
             <div className="about-card">
    
                 <img src={props.image} alt="" className="card-banner"/>

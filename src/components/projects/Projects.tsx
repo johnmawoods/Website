@@ -1,10 +1,42 @@
 import "./projects.scss"
+
+import React, { useRef, useLayoutEffect } from "react"
+import { gsap, Power3 } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
 import cv from "../../assets/computer-vision.png"
 import rt from "../../assets/runner.jpg"
 import bt from "../../assets/construction.png"
 import Project from "./Project"
 
 const Projects:React.FC = () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let title = useRef(null);
+    let card1 = useRef(null);
+    let card2 = useRef(null);
+    let card3 = useRef(null);
+
+    // title animation
+    useLayoutEffect(() => {
+        const ani1 = title.current
+        gsap.fromTo(ani1,
+            {
+                opacity: 0
+            },
+            {
+                opacity: 1,
+                duration: 1.5,
+                ease: Power3.easeOut,
+                scrollTrigger: {
+                    trigger: title.current!,
+                    start: "center 80%"
+                },
+            }
+        )
+    })
+
+
     return (
         
         <div className="projects">
